@@ -11,8 +11,8 @@ import House from "../models/House";
 
 class HouseController {
   async store(req, res) {
-    console.log(req.body);
-    console.log(req.file);
+    console.log("body", req.body);
+    console.log("file", req.file);
     //   const { email } = req.body;
     //   let user = await User.findOne({ email });
 
