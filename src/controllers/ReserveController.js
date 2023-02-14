@@ -32,6 +32,18 @@ class ReserveController {
 
     return res.json(reserve);
   }
+
+  async index(req, res) {
+    const { user_id } = req.headers;
+
+    const reserves = await Reserve.find({
+      user: user_id,
+    });
+
+    reserves.populate("house").execPopulate();
+
+    return res.json(reserves);
+  }
 }
 
 export default new ReserveController();

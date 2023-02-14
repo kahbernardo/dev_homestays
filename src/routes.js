@@ -24,5 +24,6 @@ routes.delete("/houses", HouseController.destroy);
 routes.get("/dashboard", DashboardController.show);
 // ------------------------------------------------
 routes.post("/houses/:house_id/reserve", ReserveController.store);
+routes.post("/reserves", ReserveController.index);
 
 export default routes;
