@@ -49,7 +49,7 @@ class ReserveController {
     const { user_id } = req.headers;
     const { reserve_id } = req.body;
 
-    const reserves = await Reserve.find({
+    const reserves = await Reserve.findById({
       _id: reserve_id,
     });
 
