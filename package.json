@@ -15,6 +15,7 @@
     "yup": "^1.0.0"
   },
   "devDependencies": {
+    "eslint": "^8.34.0",
     "nodemon": "^2.0.20",
     "sucrase": "^3.29.0"
   }
